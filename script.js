@@ -19,10 +19,6 @@ function getHumanChoice() {
     return choice.toLowerCase();
 }
 
-// console.log(`You win! ${humanChoice} beats $          {computerChoice}`);
-
-// console.log(`You lose! ${computerChoice} beats ${computerChoice}.`);
-
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === "rock" && computerChoice === "scissor") {
         console.log(`You win! ${humanChoice} beats ${computerChoice}`);
@@ -44,5 +40,21 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
     } else {
         console.log("Tie!");
+    }
+}
+
+
+function playGame() {
+    for (let index = 0; index < 5; index++) {
+        const humanChoice = humanChoice();
+        const computerChoice = computerChoice();
+
+        playRound(humanChoice, computerChoice);
+    }
+
+    if (humanScore > computerScore) {
+        console.log("You won the game!");
+    } else {
+        console.log("You lost the game! lol, what a loser");
     }
 }
