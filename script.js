@@ -39,22 +39,26 @@ function playRound(humanChoice, computerChoice) {
         console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
         computerScore++;
     } else {
-        console.log("Tie!");
+        console.log(`Tie! ${humanChoice} is the same with ${computerChoice}`);
     }
 }
 
 
 function playGame() {
     for (let index = 0; index < 5; index++) {
-        const humanChoice = humanChoice();
-        const computerChoice = computerChoice();
+        const human = getHumanChoice();
+        const computer = getComputerChoice();
 
-        playRound(humanChoice, computerChoice);
+        playRound(human, computer);
     }
 
     if (humanScore > computerScore) {
-        console.log("You won the game!");
-    } else {
+        console.log("You won gang");
+    } else if (computerScore > humanScore) {
         console.log("You lost the game! lol, what a loser");
+    } else {
+        console.log("Tie, boring..")
     }
 }
+
+playGame();
