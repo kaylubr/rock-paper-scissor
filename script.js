@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     choice = Math.floor(Math.random() * 3);
 
@@ -15,5 +18,3 @@ function getHumanChoice() {
 
     return choice.toUpperCase();
 }
-
-console.log(getHumanChoice());
