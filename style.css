@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    background-color: #151515;
+    color: #f5fefd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bolder;
+    font-size: 4vh;
+}
+
+footer {
+    background-color: #121212;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
