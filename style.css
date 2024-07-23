@@ -4,7 +4,6 @@ body {
     color: #f5fefd;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
 }
 
@@ -18,9 +17,68 @@ body {
     font-size: 4vh;
 }
 
+.result {
+    display: flex;
+    justify-content: space-around;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 20px;
+    padding: 25px;
+}
+
 footer {
     background-color: #121212;
     padding: 25px;
     display: flex;
     justify-content: center;
+    margin-top: auto;
 }
+
+.container, 
+.output-container, 
+.choices-container {
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.output-container {
+    padding-top: 20px;
+    height: 300px;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+
+.playerOne, .playerAI {
+    box-sizing: border-box;
+    border: 2px solid #f5fefd;
+    border-radius: 8px;
+    width: 300px;
+    height: 100%;
+}
+
+.choices-container {
+    justify-content: center;
+    gap: 3rem;
+    height: 110px;
+}
+
+.choices-container > img {
+    padding: 5px;
+    border: 2px solid #f5fefd;
+    border-radius: 6px;
+    width: 120px;
+}
+
+
