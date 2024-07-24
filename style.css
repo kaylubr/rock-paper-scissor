@@ -68,7 +68,7 @@ body {
     flex-basis: 100px;
 }
 
-.choices-container > img {
+.choices-container > a {
     border: 2px solid #f5fefd;
     border-radius: 6px;
     flex-basis: 120px;
