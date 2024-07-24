@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    gap: 2rem;
 }
 
 .header {
@@ -21,19 +22,10 @@ body {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
-    padding: 25px;
 }
 
 .result, .identifier {
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-footer {
-    background-color: #121212;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
 }
 
 .container, 
@@ -49,7 +41,6 @@ footer {
 }
 
 .output-container {
-    padding-top: 20px;
     height: 300px;
     justify-content: center;
     gap: 5rem;
@@ -74,13 +65,13 @@ footer {
 .choices-container {
     justify-content: center;
     gap: 3rem;
-    height: 110px;
+    flex-basis: 100px;
 }
 
-.choices-container > div {
+.choices-container > img {
     border: 2px solid #f5fefd;
     border-radius: 6px;
-    width: 120px;
+    flex-basis: 120px;
     padding: 8px;
     box-sizing: border-box;
 }
@@ -90,4 +81,24 @@ footer {
     height: 100%;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
 
+#reset {
+    padding: 5px 10px;
+    font-family: Copperplate;
+    font-weight: 400;
+}
+
+
+footer {
+    background-color: #121212;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    font-family: Copperplate, Papyrus, fantasy;
+}
