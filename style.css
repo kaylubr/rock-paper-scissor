@@ -65,6 +65,7 @@ body {
     height: 300px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .choices-container {
@@ -106,6 +107,12 @@ footer {
     justify-content: center;
     margin-top: auto;
     font-family: Copperplate, Papyrus, fantasy;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f5fefd;
 }
 
 #result {
@@ -115,5 +122,5 @@ footer {
 
 .image-clone {
     width: 260px;
-    height: 250px;
+    height: 240px;
 }
