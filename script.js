@@ -74,7 +74,9 @@ humanChoice.addEventListener("click", (event) => {
         computerOutput.innerHTML = "";
         playerOutput.appendChild(winnerImage);
         computerOutput.appendChild(loserImage);
-    } else if (computerScoreCount === 5) {
+    } 
+    
+    else if (computerScoreCount === 5) {
         console.log("You lose");
         humanScoreCount = 0;
         computerScoreCount = 0;
