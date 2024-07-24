@@ -1,22 +1,40 @@
-let humanScore = 0;
-let computerScore = 0;
+let humanScoreCount = 0;
+let computerScoreCount = 0;
+
+const humanScore = document.querySelector('#player-one-score');
+const computerScore = document.querySelector('#player-ai-score');
+const computer_choice = ['rock', 'paper', 'scissor'];
+const humanChoice = document.querySelector(".choices-container");
+const resetBtn = document.querySelector('#reset')
+
+humanChoice.addEventListener('click', (event) => {
+    let target = event.target;
+
+    switch(target.id) {
+        case 'rock':
+            console.log('rock clicked');
+            break;
+        case 'paper':
+            console.log('paper clicked');
+            break;
+        case 'scissor':
+            console.log('scissor clicked');
+            break;
+    }
+});
+
+resetBtn.addEventListener('click', () => {
+    humanScoreCount = 0;
+    computerScoreCount = 0;
+});
+
 
 function getComputerChoice() {
-    choice = Math.floor(Math.random() * 3);
-
-    if (choice == 1) {
-        return "rock";
-    } else if (choice == 2) {
-        return "paper";
-    } else {
-        return "scissor";
-    }
+   return choice[Math.floor(Math.random() * 3)];
 }
 
 function getHumanChoice() {
-    choice = prompt("Choice: ");
-
-    return choice.toLowerCase();
+    
 }
 
 function playRound(humanChoice, computerChoice) {
