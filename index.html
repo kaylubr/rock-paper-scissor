@@ -10,9 +10,9 @@
     <div class="header">Rock, Paper, Scissor</div>
 
     <div class="result">
-        <div class="player-one-score">You: 0</div>
+        <div id="player-one-score">You: 0</div>
         <div></div>
-        <div class="player-ai-score">Computer: 0</div>
+        <div id="player-ai-score">Computer: 0</div>
     </div>
 
     <div class="container">
@@ -29,12 +29,16 @@
         </div>
 
         <div class="choices-container">
-            <div id="rock"><a href="#"><img src="./img/hand-scissors-solid-svgrepo-com.svg" alt="scissor icon" class="choice-image"></a></div>
-            <div id="paper"><a href="#"><img src="./img/hand-paper-solid-svgrepo-com.svg" alt="paper icon" class="choice-image"></a></div>
-            <div id="scissor"><a href="#"><img src="./img/hand-rock-svgrepo-com.svg" alt="rock icon" class="choice-image"></a></div>
+            <img src="./img/hand-scissors-solid-svgrepo-com.svg" alt="scissor icon" class="choice-image" id="rock">
+            <img src="./img/hand-paper-solid-svgrepo-com.svg" alt="paper icon" class="choice-image" id="paper">
+            <img src="./img/hand-rock-svgrepo-com.svg" alt="rock icon" class="choice-image" id="scissor">
         </div>
     </div>
 
+    <div class="button-container"><button id="reset">Reset</button></div>
+
     <footer>Made by @kaylubr </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
